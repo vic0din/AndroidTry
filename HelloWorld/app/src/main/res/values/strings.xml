@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FunnyName</string>
+    <string name="hello_sugar">Hello, Sugar!</string>
+    <string name="hello_darling">Hello, my darling!</string>
+    <string name="list_name_horizontal">Horizontal list of buttons</string>
+    <string name="list_name_vertical">Vertical list of buttons</string>
 </resources>
