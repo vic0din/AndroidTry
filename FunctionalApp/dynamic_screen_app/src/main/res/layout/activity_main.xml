@@ -30,7 +30,7 @@
         </RadioButton>
     </RadioGroup>
     <LinearLayout
-            android:id="@+id/linearLayout1"
+            android:id="@+id/linearLayoutButtons"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content">
@@ -56,8 +56,38 @@
     </LinearLayout>
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/llMain"
             android:orientation="vertical">
+    </LinearLayout>
+
+    <SeekBar
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sbWeight">
+    </SeekBar>
+    <LinearLayout
+            android:id="@+id/linearLayoutWrap"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+        <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/btn1"
+                android:text="Button1"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
+        </Button>
+        <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/btn2"
+                android:text="Button2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
+        </Button>
     </LinearLayout>
 </LinearLayout>
