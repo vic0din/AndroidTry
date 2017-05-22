@@ -1,2 +1,2 @@
 
-include ':dynamic_screen_app'
+include ':calculator_app'
