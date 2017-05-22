@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DynamicScreen</string>
+    <string name="app_name">Animation</string>
     <string name="hello">Hello, my user!</string>
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
