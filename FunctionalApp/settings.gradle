@@ -1,2 +1,2 @@
 
-include ':simple_browser_app'
+include ':preferences_storage_app'
