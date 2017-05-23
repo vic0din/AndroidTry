@@ -1,2 +1,2 @@
 
-include ':preferences_storage_app'
+include ':sql_storage_app'
