@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FunctionalApp.iml" filepath="$PROJECT_DIR$/FunctionalApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/double_actions_app/double_actions_app.iml" filepath="$PROJECT_DIR$/double_actions_app/double_actions_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activity_withresult_app/activity_withresult_app.iml" filepath="$PROJECT_DIR$/activity_withresult_app/activity_withresult_app.iml" />
     </modules>
   </component>
 </project>

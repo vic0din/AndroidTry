@@ -8,7 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/double_actions_app" />
+            <option value="$PROJECT_DIR$/activity_withresult_app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,2 +1,2 @@
 
-include ':double_actions_app'
+include ':activity_withresult_app'
