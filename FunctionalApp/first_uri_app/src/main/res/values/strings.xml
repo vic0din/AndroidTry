@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">URI try</string>
+    <string name="hello">Hello, my user!</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="next">NEXT</string>
+    <string name="reset">RESET</string>
+    <string name="back">BACK</string>
+</resources>
