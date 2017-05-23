@@ -3,9 +3,7 @@ package com.study.vic0din.contextmenu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnActTwo = (Button) findViewById(R.id.btnActTwo);
+        btnActTwo = (Button) findViewById(R.id.btnRegForm);
         btnActTwo.setOnClickListener(this);
 
         btnTime = (Button) findViewById(R.id.btnTime);
@@ -40,13 +38,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()) {
-            case R.id.btnActTwo:
-                // TODO Call second activity
-                intent = new Intent(this, SecondActivity.class);
+            case R.id.btnRegForm:
+                // TODO Call RegForm activity
+                intent = new Intent(this, RegFormActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btnTime:
-                // TODO Call second activity
+                // TODO Call TimeActivity
                 intent = new Intent(this, TimeActivity.class);
                 startActivity(intent);
                 break;

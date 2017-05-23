@@ -7,24 +7,32 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 /**
  * Created by BBPax on 22.05.17.
  */
-public class TimeActivity extends AppCompatActivity implements View.OnClickListener {
+public class RegFormActivity extends AppCompatActivity implements View.OnClickListener {
 
     final String TAG = "States";
+
+    EditText etFName;
+    EditText etLName;
+
+    Button btnSubmit;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_time);
+        setContentView(R.layout.activity_reg_form);
 
-        Button btnTime = (Button) findViewById(R.id.btnShowTime);
-        Button btnDate = (Button) findViewById(R.id.btnShowDate);
+        etFName = (EditText) findViewById(R.id.etFName);
+        etLName = (EditText) findViewById(R.id.etLName);
 
-        btnTime.setOnClickListener(this);
-        btnDate.setOnClickListener(this);
+        btnSubmit = (Button) findViewById(R.id.btnSubmit);
+        btnSubmit.setOnClickListener(this);
+
+        Log.d(TAG, "RegFormActivity: onCreate()");
     }
 
     /**
@@ -34,18 +42,10 @@ public class TimeActivity extends AppCompatActivity implements View.OnClickListe
      */
     @Override
     public void onClick(View v) {
-        Intent intent;
-
-        switch(v.getId()) {
-            case R.id.btnShowTime:
-                intent = new Intent("ru.startandroid.intent.action.showtime");
-                startActivity(intent);
-                break;
-            case R.id.btnShowDate:
-                intent = new Intent("ru.startandroid.intent.action.showdate");
-                startActivity(intent);
-                break;
-        }
+        Intent intent = new Intent(this, ViewActivity.class);
+        intent.putExtra("fname", etFName.getText().toString());
+        intent.putExtra("lname", etLName.getText().toString());
+        startActivity(intent);
     }
 
     @Override
