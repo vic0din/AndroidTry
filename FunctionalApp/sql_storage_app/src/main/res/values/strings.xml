@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EmptyApp</string>
+    <string name="app_name">SQL Storage App</string>
     <string name="hello">Hello, my user!</string>
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
