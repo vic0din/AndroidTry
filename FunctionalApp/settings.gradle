@@ -1,2 +1,2 @@
 
-include ':second_sql_app'
+include ':inner_join_app'
