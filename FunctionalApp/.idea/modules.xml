@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FunctionalApp.iml" filepath="$PROJECT_DIR$/FunctionalApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/inner_join_app/inner_join_app.iml" filepath="$PROJECT_DIR$/inner_join_app/inner_join_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sql_transaction_app/sql_transaction_app.iml" filepath="$PROJECT_DIR$/sql_transaction_app/sql_transaction_app.iml" />
     </modules>
   </component>
 </project>

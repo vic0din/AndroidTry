@@ -116,6 +116,55 @@ public class MainActivity extends AppCompatActivity {
             //it already exists, but older version
         }
 
+        /**
+         * way to upgrade BD:
+         * db.beginTransaction();
+         * try {
+         * // создаем таблицу должностей
+         * db.execSQL("create table position ("
+         * + "id integer primary key,"
+         * + "name text, salary integer);");
+         *
+         * // заполняем ее
+         * for (int i = 0; i < position_id.length; i++) {
+         * cv.clear();
+         * cv.put("id", position_id[i]);
+         * cv.put("name", position_name[i]);
+         * cv.put("salary", position_salary[i]);
+         * db.insert("position", null, cv);
+         * }
+         *
+         * db.execSQL("alter table people add column posid integer;");
+         *
+         * for (int i = 0; i < position_id.length; i++) {
+         * cv.clear();
+         * cv.put("posid", position_id[i]);
+         * db.update("people", cv, "position = ?",
+         * new String[] { position_name[i] });
+         * }
+         *
+         * db.execSQL("create temporary table people_tmp ("
+         * + "id integer, name text, position text, posid integer);");
+         *
+         * db.execSQL("insert into people_tmp select id, name, position, posid from people;");
+         * db.execSQL("drop table people;");
+         *
+         * db.execSQL("create table people ("
+         * + "id integer primary key autoincrement,"
+         * + "name text, posid integer);");
+         *
+         * db.execSQL("insert into people select id, name, posid from people_tmp;");
+         * db.execSQL("drop table people_tmp;");
+         *
+         * db.setTransactionSuccessful();
+         * } finally {
+         * db.endTransaction();
+         * }
+         * @param db
+         * @param oldVersion
+         * @param newVersion
+         */
+
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             Log.d(LOG_TAG, "--- onUpgrade database ---");
 

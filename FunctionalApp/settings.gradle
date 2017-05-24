@@ -1,2 +1,2 @@
 
-include ':inner_join_app'
+include ':sql_transaction_app'
